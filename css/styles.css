@@ -411,10 +411,10 @@ address {
 
 .customers-logo {
     fill: var(--logo);
+    transition: fill 250ms var(--transition-cubic);
     width: 104px;
     height: 56px;
 }
-
 
 .footer {
     background: var(--second-text-color);
@@ -533,6 +533,11 @@ address {
     display: block;
     margin-left: auto;
 }
+
+.modal-close:is(:hover,:focus) {
+    background-color: var(--background-btn-hover);
+}
+
 .modal-close-icon {
     fill: var(--bgd-icon);
 }
